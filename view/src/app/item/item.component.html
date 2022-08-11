@@ -1,0 +1,14 @@
+
+<div class="container" classfxLayout="row" fxLayoutAlign="space-around">
+    <div >{{fromParent.item_id}}</div>
+
+    <div class="cont">{{fromParent.name}}</div>
+    <div class="cont">{{fromParent.cost}}</div>
+    <div class="cont"> 
+       <div>
+        <button (click)="addHandler(fromParent.item_id)">+</button>
+        <span>{{count}}</span>
+        <button (click)="redHandler(fromParent.item_id)">-</button>
+       </div>
+    </div>
+</div>
